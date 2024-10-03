@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css'>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Max</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Over</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projecten</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hey,<br>Ik ben <span class="home__title-color">Max,</span><br> Web Developer
+                </h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://github.com/maxhagen115?tab=repositories" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/maxphagen/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/max-hagen-12148421a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/perfil2.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Over</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
+                <div class="about-section">
+                    <h2 class="about__subtitle">Ik ben Max</h2>
+                    <p class="about__text">Ik ben een junior webontwikkelaar met ervaring in HTML, CSS, PHP, Laravel en MySQL. Zelfstandig werk gaat me goed af, maar ik geniet meer van teamwork. Ik ben gemotiveerd om webapplicaties te verbeteren en mijn vaardigheden in te zetten om bij te dragen aan het succes van een dynamisch team.</p>
+
+                    <!-- Download Resume Button -->
+                    <a href="assets/files/CV.pdf" class="cv-button" download>Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skill-item">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-css3 skills__icon'></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-php skills__icon'></i>
+                    <h3>PHP</h3>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-javascript skills__icon'></i>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container bd-grid">
+
+                <div class="work__card">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/project1.png" alt="Project 1">
+                    </a>
+                    <h3 class="work__title">Laravel Blog Platform</h3>
+                    <p class="work__description">Blog CRUD in het grootste framework van PHP - Laravel</p>
+                    <div class="work__buttons">
+                        <a href="#" class="button work__button">Demo</a>
+                        <a href="https://github.com/maxhagen115/Laravel-article-crud" class="button work__button">Code</a>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/project2.jpg" alt="Project 2">
+                    </a>
+                    <h3 class="work__title">QR Code Generator</h3>
+                    <p class="work__description">QR code genereren - JavaScript</p>
+                    <div class="work__buttons">
+                        <a href="#" class="button work__button">Demo</a>
+                        <a href="https://github.com/maxhagen115/QR-code-gen" class="button work__button">Code</a>
+                    </div>
+                </div>
+                <div class="work__card">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/project3.jpg" alt="Project 3">
+                    </a>
+                    <h3 class="work__title">Puzzelmaker</h3>
+                    <p class="work__description">Een foto transformeren naar een puzzel met een zelfgekozen aantal
+                        stukjes - PHP</p>
+                    <div class="work__buttons">
+                        <a href="#" class="button work__button">Demo</a>
+                        <a href="https://github.com/maxhagen115/Picture-Puzzle" class="button work__button">Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Naam" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Verstuur" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Max</p>
+        <div class="footer__social">
+            <a href="https://github.com/maxhagen115?tab=repositories" class="footer__icon"><i
+                    class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/maxphagen/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/max-hagen-12148421a/" class="footer__icon"><i
+                    class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="footer__copy">Copyright <a class="home__title-color" href="https://www.maxhagen.nl/">Max Hagen</a>
+            &#169; 2024</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
