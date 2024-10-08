@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- =====BOX ICONS===== -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css'>
-
     <title>Portfolio</title>
 </head>
 
@@ -48,9 +44,12 @@
             </div>
 
             <div class="home__social">
-                <a href="https://github.com/maxhagen115?tab=repositories" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/maxphagen/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/max-hagen-12148421a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/maxhagen115?tab=repositories" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/maxphagen/" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/max-hagen-12148421a/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
             </div>
 
             <div class="home__img">
@@ -80,7 +79,10 @@
 
                 <div class="about-section">
                     <h2 class="about__subtitle">Ik ben Max</h2>
-                    <p class="about__text">Ik ben een junior webontwikkelaar met ervaring in HTML, CSS, PHP, Laravel en MySQL. Zelfstandig werk gaat me goed af, maar ik geniet meer van teamwork. Ik ben gemotiveerd om webapplicaties te verbeteren en mijn vaardigheden in te zetten om bij te dragen aan het succes van een dynamisch team.</p>
+                    <p class="about__text">Ik ben een junior webontwikkelaar met ervaring in HTML, CSS, PHP, Laravel en
+                        MySQL. Zelfstandig werk gaat me goed af, maar ik geniet meer van teamwork. Ik ben gemotiveerd om
+                        webapplicaties te verbeteren en mijn vaardigheden in te zetten om bij te dragen aan het succes
+                        van een dynamisch team.</p>
 
                     <!-- Download Resume Button -->
                     <a href="assets/files/CV.pdf" class="cv-button" download>Download CV</a>
@@ -119,41 +121,44 @@
         <section class="work section" id="work">
             <h2 class="section-title">Projects</h2>
 
-            <div class="work__container bd-grid">
-
-                <div class="work__card">
-                    <a href="#" class="work__img">
-                        <img src="assets/img/project1.png" alt="Project 1">
+            <div class="work__container bd-grid grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="work__card p-4 border rounded-lg">
+                    <a href="#" class="work__img block mb-10">
+                        <img src="assets/img/project1.png" alt="Project 1" class="w-full h-auto object-cover rounded">
                     </a>
-                    <h3 class="work__title">Laravel Blog Platform</h3>
-                    <p class="work__description">Blog CRUD in het grootste framework van PHP - Laravel</p>
-                    <div class="work__buttons">
-                        <a href="#" class="button work__button">Demo</a>
-                        <a href="https://github.com/maxhagen115/Laravel-article-crud" class="button work__button">Code</a>
+                    <h3 class="work__title text-lg font-semibold mb-2">Laravel Blog Platform</h3>
+                    <p class="work__description text-sm mb-4">Blog CRUD in het grootste framework van PHP - Laravel</p>
+                    <div class="work__buttons flex gap-2">
+                        <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
+                        <a href="https://github.com/maxhagen115/Laravel-article-crud"
+                            class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
                     </div>
                 </div>
 
-                <div class="work__card">
-                    <a href="#" class="work__img">
-                        <img src="assets/img/project2.jpg" alt="Project 2">
+                <div class="work__card p-4 border rounded-lg">
+                    <a href="#" class="work__img block mb-10">
+                        <img src="assets/img/project2.jpg" alt="Project 2" class="w-full h-auto object-cover rounded">
                     </a>
-                    <h3 class="work__title">QR Code Generator</h3>
-                    <p class="work__description">QR code genereren - JavaScript</p>
-                    <div class="work__buttons">
-                        <a href="#" class="button work__button">Demo</a>
-                        <a href="https://github.com/maxhagen115/QR-code-gen" class="button work__button">Code</a>
+                    <h3 class="work__title text-lg font-semibold mb-2">QR Code Generator</h3>
+                    <p class="work__description text-sm mb-4">QR code genereren - JavaScript</p>
+                    <div class="work__buttons flex gap-2">
+                        <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
+                        <a href="https://github.com/maxhagen115/QR-code-gen"
+                            class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
                     </div>
                 </div>
-                <div class="work__card">
-                    <a href="#" class="work__img">
-                        <img src="assets/img/project3.jpg" alt="Project 3">
+
+                <div class="work__card p-4 border rounded-lg">
+                    <a href="#" class="work__img block mb-10">
+                        <img src="assets/img/project3.jpg" alt="Project 3" class="w-full h-auto object-cover rounded">
                     </a>
-                    <h3 class="work__title">Puzzelmaker</h3>
-                    <p class="work__description">Een foto transformeren naar een puzzel met een zelfgekozen aantal
-                        stukjes - PHP</p>
-                    <div class="work__buttons">
-                        <a href="#" class="button work__button">Demo</a>
-                        <a href="https://github.com/maxhagen115/Picture-Puzzle" class="button work__button">Code</a>
+                    <h3 class="work__title text-lg font-semibold mb-2">Puzzelmaker</h3>
+                    <p class="work__description text-sm mb-4">Een foto transformeren naar een puzzel met een zelfgekozen
+                        aantal stukjes - PHP</p>
+                    <div class="work__buttons flex gap-2">
+                        <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
+                        <a href="https://github.com/maxhagen115/Picture-Puzzle"
+                            class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
                     </div>
                 </div>
             </div>
@@ -162,13 +167,13 @@
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
-
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Naam" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Verstuur" class="contact__button button">
+                <div id="form-message" style="margin-bottom: 20px; display: none; text-align: center;"></div>
+                <form action="assets/php/send_mail.php" class="contact__form" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Naam" class="contact__input" required>
+                    <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
+                    <textarea id="message" name="message" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="submit" value="Verstuur" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -187,7 +192,6 @@
         <p class="footer__copy">Copyright <a class="home__title-color" href="https://www.maxhagen.nl/">Max Hagen</a>
             &#169; 2024</p>
     </footer>
-
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
