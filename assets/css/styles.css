@@ -288,6 +288,10 @@ img {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
+  height: 64px;
+  width: 64px;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 .skills__names {
   display: flex;
@@ -323,6 +327,10 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
+}
+
+.work {
+  margin-bottom: 10rem;
 }
 
 .work__card {
@@ -378,26 +386,6 @@ img {
 .work__button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
-}
-
-/* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
 }
 
 /* ===== FOOTER =====*/
@@ -466,13 +454,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
-  }
-  .contact__form {
-    width: 360px;
-    padding-top: 2rem;
-  }
-  .contact__container {
-    justify-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -545,14 +526,17 @@ img {
 
 .skills__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   padding: 2rem;
 }
 
 .skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   text-align: center;
-  position: relative;
   transition: transform 0.3s ease;
 }
 
@@ -568,6 +552,10 @@ img {
 
 .skill-item:hover .skills__icon {
   color: var(--first-color);
+}
+
+.skill-item.nextjs-icon:hover image {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(1590%) hue-rotate(210deg) brightness(95%) contrast(90%);
 }
 
 .skill-item h3 {
@@ -594,10 +582,6 @@ img {
 .skill-item:hover .skill-info {
   opacity: 1;
   bottom: -80px;
-}
-
-#contact{
-  padding-top: 100px;
 }
 
 #form-message {

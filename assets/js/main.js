@@ -1,18 +1,3 @@
-/*===== SEND EMAIL =====*/
-const urlParams = new URLSearchParams(window.location.search);
-const status = urlParams.get('status');
-const formMessage = document.getElementById('form-message');
-
-if (status === 'success') {
-    formMessage.style.display = 'block';
-    formMessage.classList.add('success');
-    formMessage.textContent = 'Message sent successfully!';
-} else if (status === 'error') {
-    formMessage.style.display = 'block';
-    formMessage.classList.add('error');
-    formMessage.textContent = 'Failed to send the message. Please try again.';
-}
-
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
@@ -70,4 +55,4 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .about-section, .work__container, .skills__container', { delay: 200 });
 sr.reveal('.home__social-icon', { interval: 600 });
-sr.reveal('.skills__data, .work__img, .contact__input', {}); 
+sr.reveal('.skills__data, .work__img', {}); 

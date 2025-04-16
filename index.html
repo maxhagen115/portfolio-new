@@ -23,7 +23,6 @@
                     <li class="nav__item"><a href="#about" class="nav__link">Over</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Projecten</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
 
@@ -39,8 +38,6 @@
             <div class="home__data">
                 <h1 class="home__title">Hey,<br>Ik ben <span class="home__title-color">Max,</span><br> Web Developer
                 </h1>
-
-                <a href="#contact" class="button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -114,6 +111,15 @@
                     <i class='bx bxl-javascript skills__icon'></i>
                     <h3>JavaScript</h3>
                 </div>
+
+                <div class="skill-item nextjs-icon">
+                    <svg class="skills__icon" width="64" height="64" viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="white" />
+                        <image href="assets/img/nextjs.png" x="12" y="12" height="40" width="40" />
+                    </svg>
+                    <h3>Next.js</h3>
+                </div>
             </div>
         </section>
 
@@ -122,12 +128,14 @@
             <h2 class="section-title">Projects</h2>
 
             <div class="work__container bd-grid grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!--===== Laravel Blog =====-->
                 <div class="work__card p-4 border rounded-lg">
                     <a href="#" class="work__img block mb-10">
-                        <img src="assets/img/project1.png" alt="Project 1" class="w-full h-auto object-cover rounded">
+                        <img src="assets/img/blog.png" alt="Project 1" class="w-full h-auto object-cover rounded">
                     </a>
-                    <h3 class="work__title text-lg font-semibold mb-2">Laravel Blog Platform</h3>
-                    <p class="work__description text-sm mb-4">Blog CRUD in het grootste framework van PHP - Laravel</p>
+                    <h3 class="work__title text-lg font-semibold mb-2">Blog Platform</h3>
+                    <p class="work__description text-sm mb-4">Blog Management in het grootste framework van PHP -
+                        Laravel</p>
                     <div class="work__buttons flex gap-2">
                         <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
                         <a href="https://github.com/maxhagen115/Laravel-article-crud"
@@ -135,6 +143,7 @@
                     </div>
                 </div>
 
+                <!--===== QR code generator =====-->
                 <div class="work__card p-4 border rounded-lg">
                     <a href="#" class="work__img block mb-10">
                         <img src="assets/img/project2.jpg" alt="Project 2" class="w-full h-auto object-cover rounded">
@@ -148,9 +157,10 @@
                     </div>
                 </div>
 
+                <!--===== Puzzlemaker =====-->
                 <div class="work__card p-4 border rounded-lg">
                     <a href="#" class="work__img block mb-10">
-                        <img src="assets/img/project3.jpg" alt="Project 3" class="w-full h-auto object-cover rounded">
+                        <img src="assets/img/puzzle.png" alt="Project 3" class="w-full h-auto object-cover rounded">
                     </a>
                     <h3 class="work__title text-lg font-semibold mb-2">Puzzelmaker</h3>
                     <p class="work__description text-sm mb-4">Een foto transformeren naar een puzzel met een zelfgekozen
@@ -161,20 +171,49 @@
                             class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact__container bd-grid">
-                <div id="form-message" style="margin-bottom: 20px; display: none; text-align: center;"></div>
-                <form action="assets/php/send_mail.php" class="contact__form" method="POST">
-                    <input type="text" id="name" name="name" placeholder="Naam" class="contact__input" required>
-                    <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
-                    <textarea id="message" name="message" cols="0" rows="10" class="contact__input" required></textarea>
-                    <input type="submit" value="Verstuur" class="contact__button button">
-                </form>
+                <!--===== Chat Applicatie =====-->
+                <div class="work__card p-4 border rounded-lg">
+                    <a href="#" class="work__img block mb-10">
+                        <img src="assets/img/chat.png" alt="Project 3" class="w-full h-auto object-cover rounded">
+                    </a>
+                    <h3 class="work__title text-lg font-semibold mb-2">Chat Applicatie</h3>
+                    <p class="work__description text-sm mb-4">Een Chatsysteem om tussen gebruikers te chatten - PHP</p>
+                    <div class="work__buttons flex gap-2">
+                        <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
+                        <a href="https://github.com/maxhagen115/Picture-Puzzle"
+                            class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
+                    </div>
+                </div>
+
+                <!--===== Laravel To Do List =====-->
+                <div class="work__card p-4 border rounded-lg">
+                    <a href="#" class="work__img block mb-10">
+                        <img src="assets/img/board.jpg" alt="Project 3" class="w-full h-auto object-cover rounded">
+                    </a>
+                    <h3 class="work__title text-lg font-semibold mb-2">To Do List</h3>
+                    <p class="work__description text-sm mb-4">Voor elk project heb je to do's. Breng het hiermee
+                        overzichtelijk - Laravel</p>
+                    <div class="work__buttons flex gap-2">
+                        <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
+                        <a href="https://github.com/maxhagen115/Picture-Puzzle"
+                            class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
+                    </div>
+                </div>
+
+                <!--===== Next.js Socials App =====-->
+                <div class="work__card p-4 border rounded-lg">
+                    <a href="#" class="work__img block mb-10">
+                        <img src="assets/img/nextjs_social.png" alt="Project 3" class="w-full h-auto object-cover rounded">
+                    </a>
+                    <h3 class="work__title text-lg font-semibold mb-2">Social App</h3>
+                    <p class="work__description text-sm mb-4">Social media app - Next.js</p>
+                    <div class="work__buttons flex gap-2">
+                        <a href="#" class="button work__button bg-blue-500 text-white px-3 py-2 rounded">Demo</a>
+                        <a href="https://github.com/maxhagen115/Picture-Puzzle"
+                            class="button work__button bg-gray-500 text-white px-3 py-2 rounded">Code</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
